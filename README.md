@@ -32,8 +32,13 @@ A modern authentication template built with Next.js 14, Supabase, and shadcn/ui.
     - Update with your Supabase credentials from Project Settings > API:
 
     ```bash
+    # Supabase
     NEXT_PUBLIC_SUPABASE_URL=[YOUR_SUPABASE_PROJECT_URL]
     NEXT_PUBLIC_SUPABASE_ANON_KEY=[YOUR_SUPABASE_ANON_KEY]
+
+    # Stripe
+    STRIPE_SECRET_KEY=[YOUR_STRIPE_SECRET_KEY]
+    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=[YOUR_STRIPE_PUBLISHABLE_KEY]
     ```
 
 4. Install dependencies and run the development server:
