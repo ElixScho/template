@@ -1,0 +1,96 @@
+.backgroundContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    background-color: black;
+    will-change: transform;
+}
+
+.imageContainer {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    perspective: 1000px;
+}
+
+.imageLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: normal;
+    transition: transform 0.2s cubic-bezier(0.2, 0, 0.3, 1),
+                opacity 0.3s cubic-bezier(0.2, 0, 0.3, 1),
+                filter 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+    will-change: transform, opacity, filter;
+    backface-visibility: hidden;
+}
+
+.imageLayer.active {
+    z-index: 2;
+}
+
+.overlayEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    transition: background 0.3s ease;
+    will-change: background;
+}
+
+.loadingOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.loadingProgress {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.loadingBar {
+    height: 4px;
+    background: linear-gradient(90deg, #00ff87, #60efff);
+    border-radius: 2px;
+    transition: width 0.3s ease-out;
+}
+
+.loadingText {
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: center;
+    font-family: monospace;
+    opacity: 0.8;
+}
+
+@media (hover: none) {
+    .imageLayer {
+        transition: opacity 0.3s ease-out;
+        transform: none !important;
+    }
+}

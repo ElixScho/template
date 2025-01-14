@@ -14,16 +14,22 @@
     "@stripe/stripe-js": "^4.10.0",
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
+    "@types/matter-js": "^0.19.8",
     "autoprefixer": "10.4.20",
+    "axios": "^1.7.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^11.14.1",
     "geist": "^1.2.1",
     "lucide-react": "^0.456.0",
+    "matter-js": "^0.20.0",
     "next": "latest",
+    "next-intl": "^3.26.1",
     "next-themes": "^0.4.3",
     "prettier": "^3.3.3",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@types/node": "22.9.0",
@@ -39,5 +45,15 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript": "5.6.3",
     "vitest": "^2.1.6"
-  }
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A modern authentication template built with Next.js 14, Supabase, and shadcn/ui. Features server-side rendering, cookie-based authentication, and a dark/light theme switcher.",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
