@@ -110,3 +110,4 @@ To learn more about the technologies used in this template, take a look at the f
 ## License
 
 MIT License
+# schobi.dev
